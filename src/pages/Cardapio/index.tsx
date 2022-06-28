@@ -9,6 +9,11 @@ export default function Cardapio(){
       <nav className={styles.menu}>
         <Logo className={styles.logo}/>
       </nav>
+      <header className={styles.header}>
+        <div className={styles.header__text}>
+          <p>A casa da Nonna é uma delícia</p>
+        </div>
+      </header>
     </main>
   );
 }
