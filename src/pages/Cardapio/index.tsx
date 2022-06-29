@@ -3,6 +3,7 @@ import 'normalize.css';
 import {ReactComponent as Logo} from 'assets/logo.svg';
 import Buscador from './Buscador';
 import { useState } from 'react';
+import Filtro from './Filtros';
 
 
 export default function Cardapio(){
@@ -24,6 +25,9 @@ export default function Cardapio(){
           Cardápio
         </h3>
           <Buscador busca={busca} setBusca = {setBusca}/>
+          <div className={styles.cardapio__filtros}>
+            <Filtro/>
+          </div>
       </section>
     </main>
   );
