@@ -1,6 +1,6 @@
-import logo from 'assets/logo.svg';
 import styles from './Item.module.scss'; 
-import cardapio from '../itens.json'
+import cardapio from '../itens.json';
+import clasNames from 'classnames'
 
 type Props = typeof cardapio[0]
 
@@ -18,7 +18,13 @@ return(
           <p>{description}</p>
       </div>
       <div className={styles.item__tags}>
-        <div className={styles.item__tipo}>
+        <div className={clasNames({
+          [styles.item__tipo]:true,
+          [styles[`item__tipo__${category.label.toLocaleLowerCase()}`]]:true,
+        })
+
+
+        }>
           {category.label}
         </div>
         <div className={styles.item__porcao}>
