@@ -30,7 +30,7 @@ return(
         <div className={styles.item__porcao}>
           {size}g
         </div>
-       <div className={styles.item__qntdpessoas}>
+       <div className={styles.item__qtdpessoas}>
         Serve {serving} pessoa{serving === 1 ? "":"s"}
        </div>
        <div className={styles.item__valor}>
