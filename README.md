@@ -29,7 +29,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode][vsco
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/MoreiraRamires/nonna-vera.git
+$ git clone https://github.com/MoreiraRamires/nonnaVera.git
 
 # Acesse a pasta do projeto no seu terminal/cmd
 
